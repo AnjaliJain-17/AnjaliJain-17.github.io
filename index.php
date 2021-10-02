@@ -44,7 +44,7 @@
           <li class="active"><a href="#header">Home</a></li>
           <li><a href="#about">About Us</a></li>
           <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">News</a></li>
+          <li><a href="#call-to-action">News</a></li>
           <li><a href="#contact">Contact Us</a></li>
         </ul>
       </nav><!-- .nav-menu -->
@@ -143,7 +143,50 @@
 
       </div>
     </section><!-- End Services Section -->
+    <section class="call-to-action" id="call-to-action">
+      <div class="container">
 
+        <div class="text-center">
+        
+          <h3>News</h3>
+          <div class="row">
+          <div class ="col-6 p-4">
+          <div class="portfolio-wrap">
+              <img src="assets/img/img3.jpeg" class="img-fluid" alt=""></div>
+        </div>
+        <div class ="col-6" style="margin: auto; color:white" >
+        Designed for fitness consumers and professionals, FitFirst is a leading publisher of timely, quality information about all things fitness and nutrition
+          </div>
+          </div>
+          <div class="row">
+        <div class ="col-6 p-4">
+          <div class="portfolio-wrap">
+              <img src="assets/img/img4.jpeg" class="img-fluid" alt=""></div>
+        </div>
+        <div></div>
+          
+        <div class ="col-6" style="margin: auto; color:white" >
+        FitFirst has a community of like-minded individuals in case you need support and extra motivation to reach your fitness goals.
+       </div>
+        </div>
+          </div>
+
+        <div class="row">
+          <div class="col-6 p-4">
+    
+          <div class="portfolio-wrap">
+              <img src="assets/img/img6.jpeg" class="img-fluid" alt=""></div>
+        </div>
+
+      
+        <div class ="col-6" style="margin: auto; color:white" >
+        FitFirst help people gain muscle size and strength, with a focus on lifting weights, eating a good diet, and living a healthy lifestyle.</div>
+        </div>
+          </div>
+</div>
+        </div>
+      </div>
+    </section>
 
     <!-- ======= Contact Us Section ======= -->
     <section id="contact" class="contact section-bg">
@@ -154,35 +197,7 @@
           <p>Need Something? The fitfirst squad is here to help you !</div>
 
         <div class="row">
-
-
-          <?php
-          // Open the file to read data.
-          $fh = fopen('assets/contacts.txt', 'r');
-          // define an eampty array
-          $data = array();
-          // read data
-          while ($line = fgets($fh)) {
-            // if the line has some data
-            if (trim($line) != '') {
-              // explode each line data 
-              $line_data = explode(';', $line);
-              // push data to array
-              //array_push($data,array('item'=>trim($line_data[0]),'value'=>trim($line_data[1])));
-              echo  '<div class="col-sm-3">
-       <div class="card">
-         <div class="card-body">
-           <h5 class="card-title"><i class="icofont-contact-add"></i><b>' . trim($line_data[0]) . '</b></h5>
-           <p class="card-text"><i class="icofont-email"></i>' . trim($line_data[1]) . '</p> 
-           <p class="card-text"><i class="icofont-phone"></i>' . trim($line_data[2]) . '</p>
-           <p class="card-text"><i class="icofont-address-book"></i>' . trim($line_data[3]) . '</p>
-         </div>
-       </div>
-     </div>';
-            }
-          }
-          fclose($fh);
-          ?>
+        <?php include 'php/contacts.php';?>
         </div>
 
       </div>
