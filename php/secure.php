@@ -16,7 +16,7 @@
     <?php
     extract($_POST);
     if (isset($NewUser)) {
-        if (!($file = fopen('../assets/password.txt', 'a'))) {
+        if (!($file = fopen("../assets/password.txt", "a"))) {
             echo '<p class="danger"> Error! Could not open file.</p>';
             die();
         }
