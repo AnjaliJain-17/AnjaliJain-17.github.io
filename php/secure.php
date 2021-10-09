@@ -49,7 +49,8 @@
     }
     function userAdded($name)
     {
-        echo '<p class="success">Your registration was successful!</p>';
+        echo '<div style="margin-top:10%; font-size : 30px; color:green;"><b><p class="success"
+        color: green;" >Your registration was successful!</p></b></div>';
     }
 
     function checkPassword($password, $filedata)
