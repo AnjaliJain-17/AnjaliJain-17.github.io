@@ -1,6 +1,3 @@
-<html>
-<?php include 'common/header.php'; ?>    
- <body>       
 
  <!-- ======= Services Section ======= -->
  <section id="services" class="services section-bg">
@@ -48,5 +45,4 @@
 
       </div>
     </section><!-- End Services Section -->
- </body>
-</html>
+ 

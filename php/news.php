@@ -1,8 +1,3 @@
-<html>
-<?php include 'common/header.php'; ?>    
- <body>       
- <?php include 'common/navbar.php'; ?>  
-
  <section class="call-to-action" id="call-to-action">
       <div class="container">
 
@@ -50,5 +45,3 @@
       </div>
       </div>
     </section>
- </body>
-</html>

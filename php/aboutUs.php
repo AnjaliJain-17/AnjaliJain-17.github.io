@@ -1,6 +1,4 @@
-<html>
-<?php include 'common/header.php'; ?>    
- <body>       
+
 <!-- ======= About Us Section ======= -->
 <section id="about" class="about">
       <div class="container">
@@ -32,5 +30,4 @@
 
       </div>
     </section><!-- End About Us Section -->
- </body>
-</html>
+ 
