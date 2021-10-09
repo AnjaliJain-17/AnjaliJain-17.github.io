@@ -1,70 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>FitFirst - Home</title>
-  <meta content="" name="descriptison">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Lato:400,300,700,900" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-</head>
-
+<?php include 'common/header.php'; ?>
 <body>
+<?php include 'common/navbar.php'; ?>
+  
 
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
-    <div class="container">
-
-      <div class="logo float-left">
-        <h1 class="text-light"><a href="index.html"><span>FitFirst</span></a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
-      </div>
-
-      <nav class="nav-menu float-right d-none d-lg-block">
-        <ul>
-          <li class="active"><a href="#header">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#call-to-action">News</a></li>
-          <li><a href="#contact">Contact Us</a></li>
-        </ul>
-      </nav><!-- .nav-menu -->
-
-    </div>
-  </header><!-- End #header -->
-
-  <!-- ======= Hero Section ======= -->
+  <!-- ======= Welcome Section ======= -->
   <section id="hero">
     <div class="hero-container">
       <h1>Welcome to FitFirst</h1>
       <h2>Sweat today or bleed tomorrow!</h2>
       <a href="#about" class="btn-get-started scrollto">Get Started</a>
     </div>
-  </section><!-- #hero -->
+  </section><!-- #Welcome -->
 
   <main id="main">
-
-
-
     <!-- ======= About Us Section ======= -->
     <section id="about" class="about">
       <div class="container">
@@ -147,67 +98,94 @@
       <div class="container">
 
         <div class="text-center">
-        
+
           <h3>News</h3>
           <div class="row">
-          <div class ="col-6 p-4">
-          <div class="portfolio-wrap">
-              <img src="assets/img/img3.jpeg" class="img-fluid" alt=""></div>
-        </div>
-        <div class ="col-6" style="margin: auto; color:white" >
-        Designed for fitness consumers and professionals, FitFirst is a leading publisher of timely, quality information about all things fitness and nutrition
-          </div>
+            <div class="col-6 p-4">
+              <div class="portfolio-wrap">
+                <img src="assets/img/img3.jpeg" class="img-fluid" alt="">
+              </div>
+            </div>
+            <div class="col-6" style="margin: auto; color:white">
+              Designed for fitness consumers and professionals, FitFirst is a leading publisher of timely, quality information about all things fitness and nutrition
+            </div>
           </div>
           <div class="row">
-        <div class ="col-6 p-4">
-          <div class="portfolio-wrap">
-              <img src="assets/img/img4.jpeg" class="img-fluid" alt=""></div>
-        </div>
-        <div></div>
-          
-        <div class ="col-6" style="margin: auto; color:white" >
-        FitFirst has a community of like-minded individuals in case you need support and extra motivation to reach your fitness goals.
-       </div>
-        </div>
+            <div class="col-6 p-4">
+              <div class="portfolio-wrap">
+                <img src="assets/img/img4.jpeg" class="img-fluid" alt="">
+              </div>
+            </div>
+            <div></div>
+
+            <div class="col-6" style="margin: auto; color:white">
+              FitFirst has a community of like-minded individuals in case you need support and extra motivation to reach your fitness goals.
+            </div>
           </div>
+        </div>
 
         <div class="row">
           <div class="col-6 p-4">
-    
-          <div class="portfolio-wrap">
-              <img src="assets/img/img6.jpeg" class="img-fluid" alt=""></div>
-        </div>
 
-      
-        <div class ="col-6" style="margin: auto; color:white" >
-        FitFirst help people gain muscle size and strength, with a focus on lifting weights, eating a good diet, and living a healthy lifestyle.</div>
-        </div>
+            <div class="portfolio-wrap">
+              <img src="assets/img/img6.jpeg" class="img-fluid" alt="">
+            </div>
           </div>
-</div>
+
+
+          <div class="col-6" style="margin: auto; color:white">
+            FitFirst help people gain muscle size and strength, with a focus on lifting weights, eating a good diet, and living a healthy lifestyle.</div>
         </div>
+      </div>
+      </div>
+      </div>
       </div>
     </section>
 
     <!-- ======= Contact Us Section ======= -->
     <section id="contact" class="contact section-bg">
       <div class="container">
-
         <div class="section-title">
           <h2>Contact Us</h2>
-          <p>Need Something? The fitfirst squad is here to help you !</div>
-
-        <div class="row">
-        <?php include 'php/contacts.php';?>
+          <p>Need Something? The fitfirst squad is here to help you !
         </div>
-
+        <div class="row">
+          <?php include 'php/contacts.php'; ?>
+        </div>
       </div>
     </section><!-- End Contact Us Section -->
+
+
+    <section id="secure" class="secure section-bg">
+      <div class="container">
+        <div class="section-title">
+        <h2>Login to Secure Section</h2>
+          <form action="php/secure.php" method="post">
+            
+              <div class="form-group">
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="username" required>
+              </div>
+              <div class="form-group col-12">
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="password" required>
+              </div>  
+              <div class="form-group">
+              <button type="submit" style="border-radius:10% ;margin-left:5%%;">Login</button>
+              <button type="submit" style="border-radius:10%" name="NewUser">New User</button>
+              </div>
+             
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
 
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
-          Copyright @ FitFirst
+    Copyright @ FitFirst
   </footer><!-- End #footer -->
 
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
