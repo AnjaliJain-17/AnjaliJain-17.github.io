@@ -19,6 +19,7 @@
         <li><a href="#call-to-action">News</a></li>
         <li><a href="#contact">Contact Us</a></li>
         <li><a href="#secure">Secure</a></li>
+        <li><a href="#user">Users</a></li>
       </ul>
     </nav><!-- .nav-menu -->
 
