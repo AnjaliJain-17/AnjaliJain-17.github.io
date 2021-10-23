@@ -38,7 +38,8 @@
                 echo '<strong>Name:  </strong>' . $row['fname'] . ' ' . $row['lname'] . '</br>';
                 echo '<strong>Email:  </strong>' . $row['email'] . '</br>';
                 echo '<strong>Cell Phone:  </strong>' . $row['cell_phone'] . '</br>';
-                echo '<strong>Mobile Phone:  </strong>' . $row['home_phone'] . '</br></br>';
+                echo '<strong>Mobile Phone:  </strong>' . $row['home_phone'] . '</br>';
+                echo '<strong>Address:  </strong>' . $row['address'] . '</br></br>';
             }
         } else {
             echo 'No data';

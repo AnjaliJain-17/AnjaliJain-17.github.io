@@ -28,9 +28,9 @@ if(isset($_POST)){
     $homeAddress    = $_POST['homeAddress'];
 
 
-		$sql = "insert into user (fname,lname,email,cell_phone,home_phone) VALUES(UPPER(?),UPPER(?),UPPER(?),UPPER(?),UPPER(?))";
+		$sql = "insert into user (fname,lname,email,cell_phone,home_phone,address) VALUES(UPPER(?),UPPER(?),UPPER(?),UPPER(?),UPPER(?),UPPER(?))";
 		$stmtinsert = $db->prepare($sql);
-		$result = $stmtinsert->execute([$firstname." ".$lastname, $lastname, $email, $cellPhone, $homePhone]);
+		$result = $stmtinsert->execute([$firstname." ".$lastname, $lastname, $email, $cellPhone, $homePhone, $homeAddress]);
 		if($result){
 			echo '<div style="color:green;"><h3>'.$firstname." ".$lastname.' : User Successfully saved.</h3></div>';
 		}else{
