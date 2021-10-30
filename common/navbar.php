@@ -18,7 +18,7 @@
         <li><a href="#services">Services</a></li>
         <li><a href="#call-to-action">News</a></li>
         <li><a href="#contact">Contact Us</a></li>
-        <li><a href="#secure">Secure</a></li>
+        <li><a href="../php/login.php">Secure</a></li>
         <li><a href="../php/users.php">Users</a></li>
       </ul>
     </nav><!-- .nav-menu -->

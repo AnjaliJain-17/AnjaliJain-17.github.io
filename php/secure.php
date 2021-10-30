@@ -2,9 +2,9 @@
 <?php include '../common/header.php'; ?>
 <header id="header" class="fixed-top">
     <div class="container">
-
         <div class="logo float-left">
             <h1 class="text-light"><a href="index.php"><span>FitFirst</span></a></h1>
+   
             <!-- Uncomment below if you prefer to use an image logo -->
             <a href="index.php"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
         </div>
@@ -14,6 +14,8 @@
 <body style="text-align: center;">
 
     <?php
+      ob_start();
+      session_start();
     extract($_POST);
     if (isset($NewUser)) {
         if (!($file = fopen("../assets/password.txt", "a"))) {
@@ -37,6 +39,7 @@
                 $userVerified = 1;
                 if (checkPassword($password, $fields) == true) {
                     accessGranted($username);
+                    $_SESSION["user"] = $username;
                 } else {
                     invalidPassword();
                 }
@@ -90,7 +93,7 @@
 
     ?>
 
-    <a href="../index.php"><i class="icofont-arrow-left"></i><u>Go Back</u></a>
+    <a href="logout.php"><i class="icofont-arrow-left"></i><u>Go Back</u></a>
 </body>
 
 </html>

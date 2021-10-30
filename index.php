@@ -21,29 +21,6 @@
     <?php include 'php/news.php'; ?>
     <?php include 'php/contacts.php'; ?>
   
-    <section id="secure" class="secure section-bg">
-      <div class="container">
-        <div class="section-title">
-          <h2>Login to Secure Section</h2>
-          <form action="php/secure.php" method="post">
-            <div class="form-group">
-              <label for="uname"><b>Username</b></label>
-              <input type="text" placeholder="Enter Username" name="username" required>
-            </div>
-            <div class="form-group col-12">
-              <label for="psw"><b>Password</b></label>
-              <input type="password" placeholder="Enter Password" name="password" required>
-            </div>
-            <div class="form-group">
-              <button type="submit" style="border-radius:10% ;margin-left:5%;">Login</button>
-              <button type="submit" style="border-radius:10%" name="NewUser">New User</button>
-            </div>
-        </div>
-        </form>
-      </div>
-      </div>
-    </section>
-     
 
   </main><!-- End #main -->
   <?php include 'common/footer.php'; ?>
