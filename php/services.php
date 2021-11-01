@@ -6,7 +6,7 @@
       <h2>Services</h2>
       <p>Have a look at myraid of key services that we offer below and select the one that best fits your needs!</p>
     </div>
-    <div class="row mr-2"><a href="../php/readCookie.php" style=" text-decoration-line: underline;">View last 5 visited products</a></div>
+    <div class="row mr-2"><a href="../php/readcookie.php" style=" text-decoration-line: underline;">View last 5 visited products</a></div>
 
     <form method="POST" action="../php/viewProduct.php" name="Product">
       <div class="row">
