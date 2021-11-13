@@ -9,7 +9,7 @@ $getUsers->execute();
 $users = $getUsers->fetchAll();
 if(count($users) > 0){
 foreach ($users as $user) {
-    echo $user['fname'] ." ".$user['lname'].  '<br />';
+    echo $user['fname'] .  '<br />';
 }
 }else{
     echo 'No data';
