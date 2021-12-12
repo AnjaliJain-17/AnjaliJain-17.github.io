@@ -1,4 +1,4 @@
-
+@import url(https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 body {
   font-family: "Open Sans", sans-serif;
   color: #777;
@@ -600,7 +600,7 @@ section {
   font-size: 24px;
 }
 
-.portfolio .portfolio-item:hover img {
+/* .portfolio .portfolio-item:hover img {
   opacity: 0.4;
   transform: scale(1.1);
 }
@@ -608,7 +608,7 @@ section {
 .portfolio .portfolio-item:hover .portfolio-info {
   opacity: 1;
   top: calc(50% - 30px);
-}
+} */
 
 /*--------------------------------------------------------------
 # Frequently Asked Questions
@@ -901,3 +901,54 @@ section {
   color: #fff;
 }
 
+
+#buttonclass{
+    text-decoration-line: underline;
+    border: none;
+    background: #f2f9f8;
+}
+
+.rating {
+  border: none;
+  margin-right: 49px
+}
+
+.myratings {
+  font-size: 85px;
+  color: green
+}
+
+.rating>[id^="star"] {
+  display: none
+}
+
+.rating>label:before {
+  margin: 5px;
+  font-size: 2.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005"
+}
+
+.rating>.half:before {
+  content: "\f089";
+  position: absolute
+}
+
+.rating>label {
+  color: #ddd;
+  float: right
+}
+
+.rating>[id^="star"]:checked~label,
+.rating:not(:checked)>label:hover,
+.rating:not(:checked)>label:hover~label {
+  color: #FFD700
+}
+
+.rating>[id^="star"]:checked+label:hover,
+.rating>[id^="star"]:checked~label:hover,
+.rating>label:hover~[id^="star"]:checked~label,
+.rating>[id^="star"]:checked~label:hover~label {
+  color: #FFED85
+}
