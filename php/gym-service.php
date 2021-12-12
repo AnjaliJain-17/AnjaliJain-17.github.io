@@ -1,5 +1,30 @@
 <html>
 <?php include '../common/header.php'; ?>
+<?php
+            $userid = 1;
+            $siteID = 2;
+            $productName = 'Gym Consulting';
+            $query = "insert into visits(user_id,site_id, product_name) values ($userid,$siteID,'$productName');";
+            //echo "query: ".$query."<br>";
+            $servername = "database-1.cxfl8tcgw2oc.us-west-1.rds.amazonaws.com";
+            $username = "root";
+            $password = "12345678";
+            $dbname="cmpe272";
+            $conn = new mysqli($servername, $username, $password, $dbname);
+            if ($conn->connect_error) {
+             echo "Connection failed..";
+             return;
+            } else {
+                $result = $conn->query($query);
+                //echo "result: ".$result."<br>";
+                if($result <= 0){
+                    echo "Error in registering visit.";
+                    
+                }
+            }
+            
+            $conn->close();
+  ?>          
 <header id="header" class="fixed-top">
   <div class="container">
 

@@ -10,6 +10,31 @@
     </div>
   </div>
 </header>
+<?php
+            $userid = 1;
+            $siteID = 2;
+            $productName = 'World Class Trainer';
+            $query = "insert into visits(user_id,site_id, product_name) values ($userid,$siteID,'$productName');";
+            //echo "query: ".$query."<br>";
+            $servername = "database-1.cxfl8tcgw2oc.us-west-1.rds.amazonaws.com";
+            $username = "root";
+            $password = "12345678";
+            $dbname="cmpe272";
+            $conn = new mysqli($servername, $username, $password, $dbname);
+            if ($conn->connect_error) {
+             echo "Connection failed..";
+             return;
+            } else {
+                $result = $conn->query($query);
+                //echo "result: ".$result."<br>";
+                if($result <= 0){
+                    echo "Error in registering visit.";
+                    
+                }
+            }
+            
+            $conn->close();
+  ?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
   $(document).ready(function() {
